@@ -23,7 +23,7 @@ export default function LoginComponent() {
 
   const googleSignIn = () => {
     let res =  GoogleSignAPI();
-    console.log(res)
+    navigate('/home');
   }
   return (
     <div className='login-wrapper'>
