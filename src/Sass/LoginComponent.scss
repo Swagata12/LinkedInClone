@@ -1,0 +1,112 @@
+$linkedinBlue1: #0072B1;
+$linkedinBlue2: #0073B1;
+$linkedinBlue3: #035986;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.login-wrapper {
+    background-color: white !important;
+    height: 100vh;
+
+    .inner-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .Heading {
+        font-family: system-ui;
+        font-weight: 600;
+        color:  rgb(0, 0, 0.9);
+    }
+    .subHeading {
+       
+        margin-top: -20px;
+        font-family: system-ui;
+       
+    }
+}
+
+
+.login-btn {
+  width: 360px;
+  height: 50px;
+  cursor: pointer;
+  background-color: $linkedinBlue2;
+  border-radius: 24px;
+  outline: none;
+  border: none;
+  font-family: system-ui;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login-btn:hover {
+    background-color: $linkedinBlue3;
+}
+
+.auth-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 360px;
+
+    .common-input {
+        height: 34px;
+        padding: 10px;
+        background-color: white; 
+        outline: none;  
+        border: 1px solid #212121;
+        border-radius: 4px;
+        color: #212121;
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+
+    .common-input:focus {
+        outline: 1px solid $linkedinBlue1;
+    }
+    ::placeholder {
+        font-family: system-ui;
+        font-size: 16px;
+
+    }
+}
+
+.LinkedinLogo {
+    width: 60px;
+    // position: absolute;
+    // top: 20px;
+    // left: 20px;
+}
+
+
+  .google-btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .google-btn {
+        width: 360px !important;
+        
+    }
+    
+    .go-to-signup {
+        font-size: 18px;
+      }
+    
+    .join-now {
+        color: $linkedinBlue1;
+        font-family: system-ui;
+        cursor: pointer;
+        font-size: 18px;
+    }
+  }
